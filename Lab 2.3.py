@@ -37,5 +37,22 @@ print(digit_sp1 + digit_sp2 + digit_sp3 + digit_sp4 + digit_sp5)
 
 print("Task 5")
 another_swphrase = "Why, you stuck-up half-witted scruffy-looking nerf herder"
+print(another_swphrase[::2])
+print(another_swphrase[::-2])
 
 print("Task 6")
+
+from datetime import date
+
+
+today = date.today()
+
+today = today.strftime("%Y,%B,%d")
+
+
+print(f"The date today is {today}")
+date_parts = today.split(',')
+year = date_parts [0]
+month = date_parts [1]
+day = date_parts[2]
+print(f"Currently it is the year {year}, and the day is {day}, of {month}")
